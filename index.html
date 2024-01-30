@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="icon" type="image/x.icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <a href="#" rel="">
+            <img src="/img/logo.svg" alt="Logo Alura" class="logo">
+        </a>
+    </header>
+    <main>
+        <section class="encriptador">
+            <p class="caracteres-permitidos">2000 caracteres disponibles</p>
+            <textarea class="encriptar" placeholder="Ingresa el texto que deseas encriptar" maxlength="2000"></textarea>
+            <div class="encriptador-aviso">
+                <img src="/img/vector.png" alt="Aviso" class="img-aviso">
+                <p class="texto-aviso">Solo minisculas y sin acento.</p>
+            </div>
+            <div class="encriptador-contenedor">
+                <button type="submit" class="btn-encriptador">Encriptar</button>
+                <button type="submit" class="btn-desencriptador">Desencriptar</button>
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="tarjeta-contenedor">
+                <img src="/img/muñeco.svg" alt="Imagen mueñco" class="imag-muñeco">
+                <p class="texto-uno">Ningun mensaje fue encontrado.</p>
+                <p class="texto-dos">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="btn-copiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <a href="#" rel="">
+            <img src="/img/linkedin.svg" alt="Logo-linkedine" class="linked">
+        </a>
+        <a href="#" rel="">
+            <img src="/img/github.svg" alt="Logo-github" class="github">
+        </a>
+        <p class="copyrigth">&copy;<italic>Encriptador de texto con Javascript, CSS y HTML.<br>
+            Por Mateo Duque Gomez.
+        </italic></p>
+    </footer>
+    <script src="encriptador.js"></script>
+</body>
+</html>
