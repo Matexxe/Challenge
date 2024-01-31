@@ -13,17 +13,17 @@ btnEncriptar.addEventListener("click", e=>{
     let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, "");
     
     if(texto == ""){
-    swal("Error","El campo de texto no debe estar vacio", "error");
+    swal("Error","El campo de texto no debe estar vacío", "error");
   }
 
     else if(texto !== txt){
-        swal( "Error","No debe tener acentos ni caracteres especiales","error");
+        swal( "Error","No debe tener acentos ni carácteres especiales","error");
         txtEncriptar.value = "";
         
     }
 
     else if(texto !== texto.toLowerCase()){
-       swal("Error", "El texto debe ser todo en minuscula", "error");
+       swal("Error", "El texto debe ser todo en minúscula", "error");
        txtEncriptar.value = "";
     }
 
@@ -38,32 +38,32 @@ btnEncriptar.addEventListener("click", e=>{
         btnCopiar.style.visibility = "inherit";
         contenido.remove(); 
         txtEncriptar.value = "";
-        swal("Bien", "Texto encriptado con exito", "success");
+        swal("Bien", "Texto encriptado con éxito", "success");
     }
 });
 
 //-------Boton de Desencriptar-------//
 btnDesencriptar.addEventListener("click", e=>{
     e.preventDefault();
-    swal("Bien", "Has desencriptado con exito", "success");
+    swal("Bien", "Has desencriptado con éxito", "success");
     let texto = txtEncriptar.value;
     let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, "");
     
     if(texto == ""){
-         swal("Error", "El campo de texto no debe estar vacio", "error");
+         swal("Error", "El campo de texto no debe estar vacío", "error");
         
         
     }
 
     else if(texto !== txt){
-         swal("Error", "No debe tener acentos y caracteres especiales", "error");
+         swal("Error", "No debe tener acentos y carácteres especiales", "error");
          txtEncriptar.value = "";
         
         
     }
 
     else if(texto !== texto.toLowerCase()){
-        swal("Error", "El texto debe ser todo en miniscula", "error");
+        swal("Error", "El texto debe ser todo en minúscula", "error");
         txtEncriptar.value = "";
     }
 
